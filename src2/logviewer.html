@@ -1,0 +1,271 @@
+<!--
+ Copyright (c) 2014, 2022, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-padding">
+  <div>
+    <h1>FA POD Log Viewer</h1>
+  </div>
+
+  <div style="width:80%; border: 1px solid black; margin: 2%; padding: 2%; border-radius: 10px;">
+    <oj-validation-group valid="[[formValid]]">
+        <oj-form-layout columns="2" label-edge="start">
+          <div>
+            <h3>Search Criteria</h3>
+          </div>
+
+          <div></div>
+
+          <div>
+
+            <oj-input-text
+                label-hint="Tenency"
+                label-edge="inside"
+                value="FADEV"
+                class="demo-form-control-max-width"></oj-input-text>
+
+            <oj-input-text
+                label-hint="Logical POD Name"
+                label-edge="inside"
+                value="eecho"
+                class="demo-form-control-max-width"></oj-input-text>
+
+            <oj-input-text
+                label-hint="CIM Request"
+                label-edge="inside"
+                validators="[[cimRequestValidator]]"
+                value="CIM_99869#0"
+                class="demo-form-control-max-width"></oj-input-text>
+
+            <oj-label for="searchFor">Search In: </oj-label>
+            <hr>
+            <div id="searchFor">
+              <div style="width:30%; float: left">
+
+                <oj-label-value>
+                  <oj-label for="saasmgr" slot="label">saasmgr</oj-label>
+                  <oj-switch
+                      id="saasmgr"
+                      on-value-changed="[[updateTabs]]"
+                      value="{{saasmgr}}"
+                      slot="value">
+                  </oj-switch>
+                </oj-label-value>
+                
+                <oj-label for="podmgr" >podmgr</oj-label>
+                <!-- See Events and Listeners: All OJET element support on-(event-name) -->
+                <oj-switch
+                  id="podmgr"
+                  on-value-changed="[[updateTabs]]" 
+                  value="{{podmgr}}">
+                </oj-switch>
+
+                <oj-label for="falpg" >falpg</oj-label>
+                <oj-switch
+                  id="falpg"
+                  on-value-changed="[[updateTabs]]"
+                  value="{{falpg}}">
+                </oj-switch>
+
+                <oj-label for="faenvmgr" >faenvmgr</oj-label>
+                <oj-switch
+                  id="faenvmgr"
+                  on-value-changed="[[updateTabs]]"
+                  value="{{faenvmgr}}">
+                </oj-switch>
+                
+              </div>
+
+              <div  style="width:50%; float: right">
+
+                <oj-label for="adminVM" >adminVM</oj-label>
+                <oj-switch
+                  id="adminVM"
+                  on-value-changed="[[updateTabs]]"
+                  value="{{adminVM}}">
+                </oj-switch>
+
+                <oj-label for="podVM" >podVM</oj-label>
+                <oj-switch
+                  id="podVM"
+                  on-value-changed="[[updateTabs]]"
+                  value="{{podVM}}">
+                </oj-switch>
+
+                <oj-label for="storageVM" >storageVM</oj-label>
+                <oj-switch
+                  id="storageVM"
+                  on-value-changed="[[updateTabs]]"
+                  value="{{storageVM}}">
+                </oj-switch>
+                
+              </div>
+            </div>
+
+          </div>
+
+          <div>
+            <oj-input-text
+                label-hint="Source"
+                label-edge="inside"
+                value="source"
+                class="demo-form-control-max-width"></oj-input-text>
+            
+            <oj-label for="logLevel">Log Level: </oj-label>
+            <hr>
+
+            <oj-form-layout max-columns="3" direction="row">
+              <div>
+                <oj-label for="info" >INFO</oj-label>
+                <oj-switch
+                      id="info"
+                      value="{{info}}">
+                </oj-switch>
+             </div>
+
+              <div>
+                <oj-label for="warning" >WARNING</oj-label>
+                <oj-switch
+                      id="warning"
+                      value="{{warning}}">
+                </oj-switch>
+              </div>
+
+
+              <div>
+                <oj-label for="error" >ERROR</oj-label>
+                <oj-switch
+                      id="error"
+                      value="{{error}}">
+                </oj-switch>
+              </div>
+
+            </oj-form-layout>
+
+            <oj-input-text
+                label-hint="Log Content"
+                label-edge="inside"
+                value="Log Content"
+                class="demo-form-control-max-width"></oj-input-text>
+
+            <oj-input-text
+                label-hint="Log File"
+                label-edge="inside"
+                value="Log File"
+                class="demo-form-control-max-width"></oj-input-text>
+
+            <oj-label for="filterByTime">Filter By Time: </oj-label>
+            <hr>
+            
+            <oj-select-single
+              id="select1"
+              label-hint="Filter By Time"
+              label-edge="inside"
+              class="oj-form-control-max-width-md"
+              data="[[logFilterByTimeDP]]"
+              value="{{logFilterSelectedVal}}"></oj-select-single>
+
+          </div>
+        </oj-form-layout>
+
+        <hr>
+
+        <oj-form-layout max-columns="3">
+          <div id="div1">
+            <oj-label for="fromDate">From: </oj-label>
+            <oj-input-date-time id="fromDate" 
+                                value="{{fromValue}}" 
+                                validators="[[[dateValidator]]]"
+                                autocomplete="off">
+            </oj-input-date-time>
+          </div>
+          <div id="div2">
+            <oj-label for="toDate">To: </oj-label>
+            <oj-input-date-time id="toDate" 
+                                value="{{toValue}}" 
+                                validators="[[[dateValidator]]]"
+                                autocomplete="off">
+            </oj-input-date-time>
+          </div>
+          <div>
+            <oj-radioset
+              id="radiosetBasicDemoId"
+              label-hint="Zone"
+              label-edge="inside"
+              value="{{currentZone}}">
+              <!-- This is an example of how to use oj-bind-for-each, along with oj-bind-text to 
+                    iterate over an array of objects-->
+              <oj-bind-for-each data="[[zoneOptions]]">
+                <template>
+                  <oj-option value="[[$current.data.value]]">
+                    <oj-bind-text value="[[$current.data.zone]]"></oj-bind-text>
+                  </oj-option>
+                </template>
+              </oj-bind-for-each>
+            </oj-radioset>
+          </div>
+        </oj-form-layout>
+
+        <hr>
+
+        <oj-form-layout max-columns="3">
+          <div></div>
+          <div></div>
+          <div>
+            <oj-button id="helpButton" on-oj-action="[[helpAction]]"> Help </oj-button>
+            <oj-button id="clearButton" on-oj-action="[[clearAction]]"> Clear</oj-button>
+            <oj-button id="searchButton" on-oj-action="[[searchAction]]"> Search</oj-button>
+          </div>
+
+        </oj-form-layout>
+    </oj-validation-group>
+  </div>
+
+  <div style="height:50px"></div>
+
+  <!-- Tab Bar for Selection -->
+  <div style="width:80%; margin: 2%; padding: 2%; border-radius: 10px;">
+        <oj-tab-bar
+                selection="{{selectedItem}}"
+                data="[[dataProvider]]"
+                edge="bottom"
+                display="all">
+                <template slot="itemTemplate" data-oj-as="item">
+                  <li :class="[[{'oj-disabled' : item.data.disabled === 'true'}]]">
+                    <a href="#">
+                      <span :class="[['oj-tabbar-item-icon ' + item.data.icons]]"></span>
+                      <oj-bind-text value="[[item.data.name]]"></oj-bind-text>
+                    </a>
+                  </li>
+                </template>
+        </oj-tab-bar>
+    </div>
+
+    <!-- Table -->
+
+    <div style="height:50px"></div>
+
+    
+
+    <div style="width:80%; margin: 2%; padding: 2%; border-radius: 10px;">
+
+      <oj-form-layout max-columns="3">
+        <div></div>
+        <div></div>
+        <div>
+          <oj-button id="download" on-oj-action="[[downloadAction]]"> Download </oj-button>
+          <oj-button id="addFilter" on-oj-action="[[addFilterAction]]"> Add Filter</oj-button>
+          <oj-button id="addColumn" on-oj-action="[[addColumnAction]]"> Add Column</oj-button>
+        </div>
+      </oj-form-layout>
+      
+      <oj-table
+              id="table"
+              aria-label="Log Table"
+              data="[[dataprovider]]"
+              class="table-container"
+              columns-default="[[{'sortable': 'disabled'}]]"
+              columns="[[columns]]"></oj-table>
+    </div>
+</div>
