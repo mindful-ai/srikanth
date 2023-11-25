@@ -1,0 +1,30 @@
+<tr>
+    <oj-bind-if test="[[row.item.metadata.treeDepth === 0]]">
+      <td>
+        <oj-row-expander context="[[row]]" data-oj-clickthrough="disabled"></oj-row-expander>
+        <span><oj-bind-text value="[[row.item.data.attr.name]]"></oj-bind-text></span>
+      </td>
+      <td>
+        <span><oj-bind-text value="[[row.item.data.attr.resource]]"></oj-bind-text></span>
+      </td>
+      <td>
+        <span><oj-bind-text value="[[row.item.data.attr.start]]"></oj-bind-text></span>
+      </td>
+      <td>
+        <span><oj-bind-text value="[[row.item.data.attr.end]]"></oj-bind-text></span>
+      </td>
+    </oj-bind-if>
+    <oj-bind-if test="[[row.item.metadata.treeDepth === 1]]">
+      <td colspan="1">
+        <span><oj-bind-text value="[[row.item.data.attr.detail]]"></oj-bind-text></span>
+      </td>
+      <td colspan="3">
+        <oj-chart
+          type="pie"
+          series="[[[{'name': 'Complete', items: [row.item.data.attr.complete]}, {'name': 'Incomplete', items: [row.item.data.attr.incomplete]}]]]"
+          style-defaults='{"dataLabelPosition": "center"}'
+          legend='{"position": "bottom"}'
+          class="demo-table-chart"></oj-chart>
+      </td>
+    </oj-bind-if>
+  </tr>
