@@ -3,3 +3,9 @@ src2 -> 1.5 Hours
 src3 -> 3 Hours
 Created a table with sample data also with row expander feature
 row expander is not working for some reason with logData provided
+src4 -> 3 hours
+created functions for table data, column extraction, log file extraction, 
+upgrade UI
+debugging
+simplify table
+knowledge transfer
