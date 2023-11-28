@@ -1,0 +1,357 @@
+{
+    "fields": null,
+    "results": [
+      {
+        "data": {
+          "datetime": 1699943417561,
+          "logContent": {
+            "data": {
+              "MDC.jvmId": "Ih67gtby5hflf-1c46o21542pp4",
+              "hostname": "podmanager3",
+              "level": "INFO",
+              "loggerName": "oracle.fa.lcm.server.common.server.log.AccessLogHandler",
+              "msg": "144.25.120.29 - - [1699943417508] \"GET /falcm-podmgr/v2/environments-by-name/wrlb/self-description-from-legder HTTP/1.1\" 200 1296 \"-\" \"Swagger-Codegen/20.11.02-SNAPSHOT/java\" 4",
+              "service": "podmgr",
+              "tailed_path": "/root/volumes/podmanager/logs/json/podmgr.json.log",
+              "thread": "qtp1315022947-383728",
+              "threadId": 383728,
+              "ts": 1699943417512
+            },
+            "id": "afd361c9-cce2-4c8b-a3cd-3122b9c74b1c",
+            "oracle": {
+              "compartmentid": "ocid1.compartment.oc1..aaaaaaaahvj4zc3tou5g67ly4bndwsicm5jhw6p5jlef4fixfzg7zev2twyq",
+              "ingestedtime": "2023-11-14T06:31:09.719007109Z",
+              "instanceid": "ocid1.instance.oc1.phx.anyhqljr23ykjlicrgqxwqti4nm55uqqr64eqradib2cjuxddxoy3dsrr52q",
+              "loggroupid": "ocid1.loggroup.oc1.phx.amaaaaaa23ykjliavzkmuqmi4lyvvp2taftzg7jq3yv4ucbmnb2h3wo6dfda",
+              "logid": "ocid1.log.oc1.phx.amaaaaaa23ykjliaqj56xxkjc54ln2bfkmxcf6wteb7p622rv6sebntmkonq",
+              "tenantid": "ocid1.tenancy.oc1..aaaaaaaarn2svgspiclphqbtgjzam5aa3foqepjhfcahwvbmpch2llcmr3la"
+            },
+            "source": "podmanager_3",
+            "specversion": "1.0",
+            "subject": "/root/volumes/podmanager/logs/json/podmgr.json.log",
+            "time": "2023-11-14T06:30:17.561Z",
+            "type": "com.oraclecloud.logging.custom.podmgr_logs"
+          }
+        }
+      },
+      {
+        "data": {
+          "datetime": 1699943417561,
+          "logContent": {
+            "data": {
+              "MDC.jvmId": "Ih67gtby5hflf-1c46o21542pp4",
+              "MDC.oracleDmsEcId": "//I-1qw3xlzurjsbq-1d7qfvbo426qg-lo55mgkx-0000000l/I-1qw3xlzurjsbq-1d7qfvbo426qg-loxyf344-0000l3p3",
+              "MDC.originatingHost": "144.25.120.29",
+              "hostname": "podmanager3",
+              "level": "INFO",
+              "loggerName": "oracle.fa.lcm.rest.podmgr.api.impl.EnvironmentsByNameApiServiceImpl",
+              "msg": "Successfully fetched self description from podmgr ledger for the pod 'wrlb'. self description details: 'class FAEnvInfo {\n    class PersistenceBase {\n        id: 0042B78F678F7E74E063994115AC3E50\n        revision: 38\n        created: 1689132399314\n        modified: 1699576980326\n    }\n    isOsnEnabled: true\n    podRole: PROD\n    drPodRole: NON_DR\n    adpDREnabled: false\n    logicalPodName: wrlb\n    podName: wrlbljz3v6fv\n    intUniqueName: wrlb:PROD\n    basePodName: wrlb\n    podStamp: S1,GRC=1,VCP=1,ES=0,BIP=1\n    nextStamp: \n    customerId: 1689127840312\n    parentPodId: 503750823\n    tasSvcInstId: null\n    faReleaseVersion: 11.13.23.10.0_00.0.00\n    hybridEnabled: true\n    idmHaEnabled: true\n    hcmLearningEnabled: false\n    region: US-PHOENIX-1\n    onHold: false\n    holdStartTime: null\n    languagePacks: ko,zh_TW\n    dbVersion: 19.0.0.0.0\n    patchHistory: <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n    <ns3:CRList xmlns=\"http://xmlns.oracle.com/falcm/flo/crs/V1.0\" xmlns:ns2=\"http://xmlns.oracle.com/falcm/flo/payload/V1.0\" xmlns:ns3=\"http://xmlns.oracle.com/falcm/flo/crhistory/V1.0\" PODname=\"WRLB\">\n        <CRS>\n            <CR id=\"OSCBIPB_11070346\" type=\"BIPB\" rel=\"null\" info=\"BIAPPS_REL13.BIAPPS_MAIN_GENERIC_231105.2215-OSC\" mode=\"cold\" etc=\"8\"/>\n        </CRS>\n    </ns3:CRList>\n    \n    spectraEnabled: true\n    vmiEnabled: false\n    autoScaleEnabled: false\n    byokLastEndTime: null\n    dedicatedHostPoolName: null\n    serviceAdmittance: UNDEFINED\n    outageTypesInEffect: UNDEFINED\n}'",
+              "service": "podmgr",
+              "tailed_path": "/root/volumes/podmanager/logs/json/podmgr.json.log",
+              "thread": "qtp1315022947-383728",
+              "threadId": 383728,
+              "ts": 1699943417512
+            },
+            "id": "94527dad-319f-4ccb-a4dc-c09545bcfc74",
+            "oracle": {
+              "compartmentid": "ocid1.compartment.oc1..aaaaaaaahvj4zc3tou5g67ly4bndwsicm5jhw6p5jlef4fixfzg7zev2twyq",
+              "ingestedtime": "2023-11-14T06:31:09.719007109Z",
+              "instanceid": "ocid1.instance.oc1.phx.anyhqljr23ykjlicrgqxwqti4nm55uqqr64eqradib2cjuxddxoy3dsrr52q",
+              "loggroupid": "ocid1.loggroup.oc1.phx.amaaaaaa23ykjliavzkmuqmi4lyvvp2taftzg7jq3yv4ucbmnb2h3wo6dfda",
+              "logid": "ocid1.log.oc1.phx.amaaaaaa23ykjliaqj56xxkjc54ln2bfkmxcf6wteb7p622rv6sebntmkonq",
+              "tenantid": "ocid1.tenancy.oc1..aaaaaaaarn2svgspiclphqbtgjzam5aa3foqepjhfcahwvbmpch2llcmr3la"
+            },
+            "source": "podmanager_3",
+            "specversion": "1.0",
+            "subject": "/root/volumes/podmanager/logs/json/podmgr.json.log",
+            "time": "2023-11-14T06:30:17.561Z",
+            "type": "com.oraclecloud.logging.custom.podmgr_logs"
+          }
+        }
+      },
+      {
+        "data": {
+          "datetime": 1699943417561,
+          "logContent": {
+            "data": {
+              "MDC.jvmId": "Ih67gtby5hflf-1c46o21542pp4",
+              "MDC.oracleDmsEcId": "//I-1qw3xlzurjsbq-1d7qfvbo426qg-lo55mgkx-0000000l/I-1qw3xlzurjsbq-1d7qfvbo426qg-loxyf344-0000l3p3",
+              "MDC.originatingHost": "144.25.120.29",
+              "hostname": "podmanager3",
+              "level": "INFO",
+              "loggerName": "oracle.fa.lcm.rest.podmgr.api.impl.EnvironmentsByNameApiServiceImpl",
+              "msg": "Fetching self description from podmgr ledger for the pod wrlb ",
+              "service": "podmgr",
+              "tailed_path": "/root/volumes/podmanager/logs/json/podmgr.json.log",
+              "thread": "qtp1315022947-383728",
+              "threadId": 383728,
+              "ts": 1699943417509
+            },
+            "id": "0629821d-55c1-4ca8-ae12-fe94cbfe3f29",
+            "oracle": {
+              "compartmentid": "ocid1.compartment.oc1..aaaaaaaahvj4zc3tou5g67ly4bndwsicm5jhw6p5jlef4fixfzg7zev2twyq",
+              "ingestedtime": "2023-11-14T06:31:09.719007109Z",
+              "instanceid": "ocid1.instance.oc1.phx.anyhqljr23ykjlicrgqxwqti4nm55uqqr64eqradib2cjuxddxoy3dsrr52q",
+              "loggroupid": "ocid1.loggroup.oc1.phx.amaaaaaa23ykjliavzkmuqmi4lyvvp2taftzg7jq3yv4ucbmnb2h3wo6dfda",
+              "logid": "ocid1.log.oc1.phx.amaaaaaa23ykjliaqj56xxkjc54ln2bfkmxcf6wteb7p622rv6sebntmkonq",
+              "tenantid": "ocid1.tenancy.oc1..aaaaaaaarn2svgspiclphqbtgjzam5aa3foqepjhfcahwvbmpch2llcmr3la"
+            },
+            "source": "podmanager_3",
+            "specversion": "1.0",
+            "subject": "/root/volumes/podmanager/logs/json/podmgr.json.log",
+            "time": "2023-11-14T06:30:17.561Z",
+            "type": "com.oraclecloud.logging.custom.podmgr_logs"
+          }
+        }
+      },
+      {
+        "data": {
+          "datetime": 1699943417561,
+          "logContent": {
+            "data": {
+              "MDC.jvmId": "Ih67gtby5hflf-1c46o21542pp4",
+              "hostname": "podmanager3",
+              "level": "INFO",
+              "loggerName": "oracle.fa.lcm.server.common.server.log.AccessLogHandler",
+              "msg": "144.25.120.29 - - [1699943417489] \"GET /falcm-podmgr/v2/environments/503750890 HTTP/1.1\" 200 1217 \"-\" \"Swagger-Codegen/20.11.02-SNAPSHOT/java\" 13",
+              "service": "podmgr",
+              "tailed_path": "/root/volumes/podmanager/logs/json/podmgr.json.log",
+              "thread": "qtp1315022947-383606",
+              "threadId": 383606,
+              "ts": 1699943417502
+            },
+            "id": "07923b52-1081-4001-afa0-d8e403d7367e",
+            "oracle": {
+              "compartmentid": "ocid1.compartment.oc1..aaaaaaaahvj4zc3tou5g67ly4bndwsicm5jhw6p5jlef4fixfzg7zev2twyq",
+              "ingestedtime": "2023-11-14T06:31:09.719007109Z",
+              "instanceid": "ocid1.instance.oc1.phx.anyhqljr23ykjlicrgqxwqti4nm55uqqr64eqradib2cjuxddxoy3dsrr52q",
+              "loggroupid": "ocid1.loggroup.oc1.phx.amaaaaaa23ykjliavzkmuqmi4lyvvp2taftzg7jq3yv4ucbmnb2h3wo6dfda",
+              "logid": "ocid1.log.oc1.phx.amaaaaaa23ykjliaqj56xxkjc54ln2bfkmxcf6wteb7p622rv6sebntmkonq",
+              "tenantid": "ocid1.tenancy.oc1..aaaaaaaarn2svgspiclphqbtgjzam5aa3foqepjhfcahwvbmpch2llcmr3la"
+            },
+            "source": "podmanager_3",
+            "specversion": "1.0",
+            "subject": "/root/volumes/podmanager/logs/json/podmgr.json.log",
+            "time": "2023-11-14T06:30:17.561Z",
+            "type": "com.oraclecloud.logging.custom.podmgr_logs"
+          }
+        }
+      },
+      {
+        "data": {
+          "datetime": 1699943417561,
+          "logContent": {
+            "data": {
+              "MDC.jvmId": "Ih67gtby5hflf-1c46o21542pp4",
+              "MDC.oracleDmsEcId": "//I-1qw3xlzurjsbq-1d7qfvbo426qg-lo55mgkx-0000000l/I-1qw3xlzurjsbq-1d7qfvbo426qg-loxyf344-0000l3p4",
+              "MDC.originatingHost": "144.25.120.29",
+              "MDC.serviceId": "503750890",
+              "hostname": "podmanager3",
+              "level": "INFO",
+              "loggerName": "oracle.fa.lcm.rest.podmgr.api.impl.EnvironmentsApiServiceImpl",
+              "msg": "Found FA environmnet by name: 503750890 and responded with: class FAEnvironment {\n    class PersistenceBase {\n        id: 0042141F23E7BDF5E063994115AC4E14\n        revision: 11980\n        created: 1689129420421\n        modified: 1699942949191\n    }\n    environmentId: 503750890\n    serviceInstanceRequestId: CIM_529396#0\n    deleteJobId: null\n    stackId: null\n    logicalPodName: wrlc\n    physicalExtension: ljz41m18\n    placement: us-phoenix-1__fadev\n    serviceInstanceAppUrl: https://fa-wrlc-pintlabfadev.fa.ocs.oc-test.com:443/fscmUI/faces/FuseWelcome\n    serviceInstanceDbCoordinates: dbName=phx6g,dbSystemId=0.ocid1.cloudvmcluster.oc1.phx.anyhqljt23ykjliazb7mphbpknk67tpyyfbqgadqjhvvxy7z32z2mltyxr6a\n    status: PROVISIONED\n    statusMessage: null\n    adminHost: 172.26.66.186\n    faHosts: [172.26.66.183, 172.26.66.166, 172.26.66.158, 172.26.66.173, 172.26.66.139, 172.26.66.133]\n    idmHosts: [172.26.66.150, 172.26.66.161]\n    ohsHosts: [172.26.66.182, 172.26.66.141]\n    dbHosts: [172.21.99.45, 172.21.98.199]\n    environmentIdAlias: null\n    logicalPodNameAlias: null\n    dayNEndpointURLs: null\n    lastHeartBeat: 1699942949\n    serviceAdmittance: null\n    outageTypesInEffect: null\n    loadBalancerOCIDs: [ocid1.loadbalancer.oc1.phx.aaaaaaaaye3qbox7azklrrij7lrwzzzgtlkzyvyksoc65jxhq6jlulwv2xdq]\n    faaasMigrated: false\n    faaasMigratedTimestamp: \n    flexLbrShapeNormalized: true\n}",
+              "service": "podmgr",
+              "tailed_path": "/root/volumes/podmanager/logs/json/podmgr.json.log",
+              "thread": "qtp1315022947-383606",
+              "threadId": 383606,
+              "ts": 1699943417502
+            },
+            "id": "b95ffaf3-d4d6-44c2-b512-033fb93c385a",
+            "oracle": {
+              "compartmentid": "ocid1.compartment.oc1..aaaaaaaahvj4zc3tou5g67ly4bndwsicm5jhw6p5jlef4fixfzg7zev2twyq",
+              "ingestedtime": "2023-11-14T06:31:09.719007109Z",
+              "instanceid": "ocid1.instance.oc1.phx.anyhqljr23ykjlicrgqxwqti4nm55uqqr64eqradib2cjuxddxoy3dsrr52q",
+              "loggroupid": "ocid1.loggroup.oc1.phx.amaaaaaa23ykjliavzkmuqmi4lyvvp2taftzg7jq3yv4ucbmnb2h3wo6dfda",
+              "logid": "ocid1.log.oc1.phx.amaaaaaa23ykjliaqj56xxkjc54ln2bfkmxcf6wteb7p622rv6sebntmkonq",
+              "tenantid": "ocid1.tenancy.oc1..aaaaaaaarn2svgspiclphqbtgjzam5aa3foqepjhfcahwvbmpch2llcmr3la"
+            },
+            "source": "podmanager_3",
+            "specversion": "1.0",
+            "subject": "/root/volumes/podmanager/logs/json/podmgr.json.log",
+            "time": "2023-11-14T06:30:17.561Z",
+            "type": "com.oraclecloud.logging.custom.podmgr_logs"
+          }
+        }
+      },
+      {
+        "data": {
+          "datetime": 1699943417561,
+          "logContent": {
+            "data": {
+              "MDC.jvmId": "Ih67gtby5hflf-1c46o21542pp4",
+              "MDC.oracleDmsEcId": "//I-1qw3xlzurjsbq-1d7qfvbo426qg-lo55mgkx-0000000l/I-1qw3xlzurjsbq-1d7qfvbo426qg-loxyf344-0000l3p4",
+              "MDC.originatingHost": "144.25.120.29",
+              "MDC.serviceId": "503750890",
+              "hostname": "podmanager3",
+              "level": "INFO",
+              "loggerName": "oracle.fa.lcm.services.podmgr.WrkMgrFaEnv",
+              "msg": "reconcileStatus: compounded status for env: class FAEnvironment {\n    class PersistenceBase {\n        id: 0042141F23E7BDF5E063994115AC4E14\n        revision: 11980\n        created: 1689129420421\n        modified: 1699942949191\n    }\n    environmentId: 503750890\n    serviceInstanceRequestId: CIM_529396#0\n    deleteJobId: null\n    stackId: null\n    logicalPodName: wrlc\n    physicalExtension: ljz41m18\n    placement: us-phoenix-1__fadev\n    serviceInstanceAppUrl: https://fa-wrlc-pintlabfadev.fa.ocs.oc-test.com:443/fscmUI/faces/FuseWelcome\n    serviceInstanceDbCoordinates: dbName=phx6g,dbSystemId=0.ocid1.cloudvmcluster.oc1.phx.anyhqljt23ykjliazb7mphbpknk67tpyyfbqgadqjhvvxy7z32z2mltyxr6a\n    status: PROVISIONED\n    statusMessage: null\n    adminHost: 172.26.66.186\n    faHosts: [172.26.66.183, 172.26.66.166, 172.26.66.158, 172.26.66.173, 172.26.66.139, 172.26.66.133]\n    idmHosts: [172.26.66.150, 172.26.66.161]\n    ohsHosts: [172.26.66.182, 172.26.66.141]\n    dbHosts: [172.21.99.45, 172.21.98.199]\n    environmentIdAlias: null\n    logicalPodNameAlias: null\n    dayNEndpointURLs: null\n    lastHeartBeat: 1699942949\n    serviceAdmittance: null\n    outageTypesInEffect: null\n    loadBalancerOCIDs: [ocid1.loadbalancer.oc1.phx.aaaaaaaaye3qbox7azklrrij7lrwzzzgtlkzyvyksoc65jxhq6jlulwv2xdq]\n    faaasMigrated: false\n    faaasMigratedTimestamp: \n    flexLbrShapeNormalized: true\n} : COMPLETED for terminal status: PROVISIONED",
+              "service": "podmgr",
+              "tailed_path": "/root/volumes/podmanager/logs/json/podmgr.json.log",
+              "thread": "qtp1315022947-383606",
+              "threadId": 383606,
+              "ts": 1699943417502
+            },
+            "id": "098cf682-f4ee-41d4-b38e-bf7bb50e060b",
+            "oracle": {
+              "compartmentid": "ocid1.compartment.oc1..aaaaaaaahvj4zc3tou5g67ly4bndwsicm5jhw6p5jlef4fixfzg7zev2twyq",
+              "ingestedtime": "2023-11-14T06:31:09.719007109Z",
+              "instanceid": "ocid1.instance.oc1.phx.anyhqljr23ykjlicrgqxwqti4nm55uqqr64eqradib2cjuxddxoy3dsrr52q",
+              "loggroupid": "ocid1.loggroup.oc1.phx.amaaaaaa23ykjliavzkmuqmi4lyvvp2taftzg7jq3yv4ucbmnb2h3wo6dfda",
+              "logid": "ocid1.log.oc1.phx.amaaaaaa23ykjliaqj56xxkjc54ln2bfkmxcf6wteb7p622rv6sebntmkonq",
+              "tenantid": "ocid1.tenancy.oc1..aaaaaaaarn2svgspiclphqbtgjzam5aa3foqepjhfcahwvbmpch2llcmr3la"
+            },
+            "source": "podmanager_3",
+            "specversion": "1.0",
+            "subject": "/root/volumes/podmanager/logs/json/podmgr.json.log",
+            "time": "2023-11-14T06:30:17.561Z",
+            "type": "com.oraclecloud.logging.custom.podmgr_logs"
+          }
+        }
+      },
+      {
+        "data": {
+          "datetime": 1699943417561,
+          "logContent": {
+            "data": {
+              "MDC.jvmId": "Ih67gtby5hflf-1c46o21542pp4",
+              "MDC.oracleDmsEcId": "//I-1qw3xlzurjsbq-1d7qfvbo426qg-lo55mgkx-0000000l/I-1qw3xlzurjsbq-1d7qfvbo426qg-loxyf344-0000l3p4",
+              "MDC.originatingHost": "144.25.120.29",
+              "MDC.serviceId": "503750890",
+              "hostname": "podmanager3",
+              "level": "INFO",
+              "loggerName": "oracle.fa.lcm.services.podmgr.WrkMgrFaEnv",
+              "msg": "reconcileStatus: on env: class FAEnvironment {\n    class PersistenceBase {\n        id: 0042141F23E7BDF5E063994115AC4E14\n        revision: 11980\n        created: 1689129420421\n        modified: 1699942949191\n    }\n    environmentId: 503750890\n    serviceInstanceRequestId: CIM_529396#0\n    deleteJobId: null\n    stackId: null\n    logicalPodName: wrlc\n    physicalExtension: ljz41m18\n    placement: us-phoenix-1__fadev\n    serviceInstanceAppUrl: https://fa-wrlc-pintlabfadev.fa.ocs.oc-test.com:443/fscmUI/faces/FuseWelcome\n    serviceInstanceDbCoordinates: dbName=phx6g,dbSystemId=0.ocid1.cloudvmcluster.oc1.phx.anyhqljt23ykjliazb7mphbpknk67tpyyfbqgadqjhvvxy7z32z2mltyxr6a\n    status: PROVISIONED\n    statusMessage: null\n    adminHost: 172.26.66.186\n    faHosts: [172.26.66.183, 172.26.66.166, 172.26.66.158, 172.26.66.173, 172.26.66.139, 172.26.66.133]\n    idmHosts: [172.26.66.150, 172.26.66.161]\n    ohsHosts: [172.26.66.182, 172.26.66.141]\n    dbHosts: [172.21.99.45, 172.21.98.199]\n    environmentIdAlias: null\n    logicalPodNameAlias: null\n    dayNEndpointURLs: null\n    lastHeartBeat: 1699942949\n    serviceAdmittance: null\n    outageTypesInEffect: null\n    loadBalancerOCIDs: [ocid1.loadbalancer.oc1.phx.aaaaaaaaye3qbox7azklrrij7lrwzzzgtlkzyvyksoc65jxhq6jlulwv2xdq]\n    faaasMigrated: false\n    faaasMigratedTimestamp: \n    flexLbrShapeNormalized: true\n}",
+              "service": "podmgr",
+              "tailed_path": "/root/volumes/podmanager/logs/json/podmgr.json.log",
+              "thread": "qtp1315022947-383606",
+              "threadId": 383606,
+              "ts": 1699943417492
+            },
+            "id": "fcda4eec-f9a8-414c-9537-09e36fb9a6b6",
+            "oracle": {
+              "compartmentid": "ocid1.compartment.oc1..aaaaaaaahvj4zc3tou5g67ly4bndwsicm5jhw6p5jlef4fixfzg7zev2twyq",
+              "ingestedtime": "2023-11-14T06:31:09.719007109Z",
+              "instanceid": "ocid1.instance.oc1.phx.anyhqljr23ykjlicrgqxwqti4nm55uqqr64eqradib2cjuxddxoy3dsrr52q",
+              "loggroupid": "ocid1.loggroup.oc1.phx.amaaaaaa23ykjliavzkmuqmi4lyvvp2taftzg7jq3yv4ucbmnb2h3wo6dfda",
+              "logid": "ocid1.log.oc1.phx.amaaaaaa23ykjliaqj56xxkjc54ln2bfkmxcf6wteb7p622rv6sebntmkonq",
+              "tenantid": "ocid1.tenancy.oc1..aaaaaaaarn2svgspiclphqbtgjzam5aa3foqepjhfcahwvbmpch2llcmr3la"
+            },
+            "source": "podmanager_3",
+            "specversion": "1.0",
+            "subject": "/root/volumes/podmanager/logs/json/podmgr.json.log",
+            "time": "2023-11-14T06:30:17.561Z",
+            "type": "com.oraclecloud.logging.custom.podmgr_logs"
+          }
+        }
+      },
+      {
+        "data": {
+          "datetime": 1699943417561,
+          "logContent": {
+            "data": {
+              "MDC.jvmId": "Ih67gtby5hflf-1c46o21542pp4",
+              "hostname": "podmanager3",
+              "level": "INFO",
+              "loggerName": "oracle.fa.lcm.server.common.server.log.AccessLogHandler",
+              "msg": "144.25.120.29 - - [1699943417449] \"GET /falcm-podmgr/v2/environments-by-name/wrjv/self-description-from-legder HTTP/1.1\" 200 838 \"-\" \"Swagger-Codegen/20.11.02-SNAPSHOT/java\" 4",
+              "service": "podmgr",
+              "tailed_path": "/root/volumes/podmanager/logs/json/podmgr.json.log",
+              "thread": "qtp1315022947-383867",
+              "threadId": 383867,
+              "ts": 1699943417453
+            },
+            "id": "49feb7e8-3144-4556-9aa1-dccf3006fff6",
+            "oracle": {
+              "compartmentid": "ocid1.compartment.oc1..aaaaaaaahvj4zc3tou5g67ly4bndwsicm5jhw6p5jlef4fixfzg7zev2twyq",
+              "ingestedtime": "2023-11-14T06:31:09.719007109Z",
+              "instanceid": "ocid1.instance.oc1.phx.anyhqljr23ykjlicrgqxwqti4nm55uqqr64eqradib2cjuxddxoy3dsrr52q",
+              "loggroupid": "ocid1.loggroup.oc1.phx.amaaaaaa23ykjliavzkmuqmi4lyvvp2taftzg7jq3yv4ucbmnb2h3wo6dfda",
+              "logid": "ocid1.log.oc1.phx.amaaaaaa23ykjliaqj56xxkjc54ln2bfkmxcf6wteb7p622rv6sebntmkonq",
+              "tenantid": "ocid1.tenancy.oc1..aaaaaaaarn2svgspiclphqbtgjzam5aa3foqepjhfcahwvbmpch2llcmr3la"
+            },
+            "source": "podmanager_3",
+            "specversion": "1.0",
+            "subject": "/root/volumes/podmanager/logs/json/podmgr.json.log",
+            "time": "2023-11-14T06:30:17.561Z",
+            "type": "com.oraclecloud.logging.custom.podmgr_logs"
+          }
+        }
+      },
+      {
+        "data": {
+          "datetime": 1699943417561,
+          "logContent": {
+            "data": {
+              "MDC.jvmId": "Ih67gtby5hflf-1c46o21542pp4",
+              "MDC.oracleDmsEcId": "//I-1qw3xlzurjsbq-1d7qfvbo426qg-lo55mgkx-0000000l/I-1qw3xlzurjsbq-1d7qfvbo426qg-loxyf344-0000l3oy",
+              "MDC.originatingHost": "144.25.120.29",
+              "hostname": "podmanager3",
+              "level": "INFO",
+              "loggerName": "oracle.fa.lcm.rest.podmgr.api.impl.EnvironmentsByNameApiServiceImpl",
+              "msg": "Successfully fetched self description from podmgr ledger for the pod 'wrjv'. self description details: 'class FAEnvInfo {\n    class PersistenceBase {\n        id: 002782CD8FC73187E0631E4115AC17A3\n        revision: 39\n        created: 1689015580703\n        modified: 1697560843487\n    }\n    isOsnEnabled: true\n    podRole: PROD\n    drPodRole: NON_DR\n    adpDREnabled: false\n    logicalPodName: wrjv\n    podName: wrjvljx62sov\n    intUniqueName: wrjv:PROD\n    basePodName: wrjv\n    podStamp: S1,GRC=1,VCP=1,ES=0,BIP=1\n    nextStamp: \n    customerId: 1689010256795\n    parentPodId: 503737731\n    tasSvcInstId: null\n    faReleaseVersion: 11.13.23.10.0_00.0.00\n    hybridEnabled: true\n    idmHaEnabled: true\n    hcmLearningEnabled: false\n    region: US-PHOENIX-1\n    onHold: false\n    holdStartTime: null\n    languagePacks: ko,th\n    dbVersion: 19.0.0.0.0\n    patchHistory: null\n    spectraEnabled: true\n    vmiEnabled: false\n    autoScaleEnabled: false\n    byokLastEndTime: null\n    dedicatedHostPoolName: null\n    serviceAdmittance: UNDEFINED\n    outageTypesInEffect: UNDEFINED\n}'",
+              "service": "podmgr",
+              "tailed_path": "/root/volumes/podmanager/logs/json/podmgr.json.log",
+              "thread": "qtp1315022947-383867",
+              "threadId": 383867,
+              "ts": 1699943417453
+            },
+            "id": "40e1f1bc-d650-4c42-b67b-671b58d1bd78",
+            "oracle": {
+              "compartmentid": "ocid1.compartment.oc1..aaaaaaaahvj4zc3tou5g67ly4bndwsicm5jhw6p5jlef4fixfzg7zev2twyq",
+              "ingestedtime": "2023-11-14T06:31:09.719007109Z",
+              "instanceid": "ocid1.instance.oc1.phx.anyhqljr23ykjlicrgqxwqti4nm55uqqr64eqradib2cjuxddxoy3dsrr52q",
+              "loggroupid": "ocid1.loggroup.oc1.phx.amaaaaaa23ykjliavzkmuqmi4lyvvp2taftzg7jq3yv4ucbmnb2h3wo6dfda",
+              "logid": "ocid1.log.oc1.phx.amaaaaaa23ykjliaqj56xxkjc54ln2bfkmxcf6wteb7p622rv6sebntmkonq",
+              "tenantid": "ocid1.tenancy.oc1..aaaaaaaarn2svgspiclphqbtgjzam5aa3foqepjhfcahwvbmpch2llcmr3la"
+            },
+            "source": "podmanager_3",
+            "specversion": "1.0",
+            "subject": "/root/volumes/podmanager/logs/json/podmgr.json.log",
+            "time": "2023-11-14T06:30:17.561Z",
+            "type": "com.oraclecloud.logging.custom.podmgr_logs"
+          }
+        }
+      },
+      {
+        "data": {
+          "datetime": 1699943417561,
+          "logContent": {
+            "data": {
+              "MDC.jvmId": "Ih67gtby5hflf-1c46o21542pp4",
+              "MDC.oracleDmsEcId": "//I-1qw3xlzurjsbq-1d7qfvbo426qg-lo55mgkx-0000000l/I-1qw3xlzurjsbq-1d7qfvbo426qg-loxyf344-0000l3oy",
+              "MDC.originatingHost": "144.25.120.29",
+              "hostname": "podmanager3",
+              "level": "INFO",
+              "loggerName": "oracle.fa.lcm.rest.podmgr.api.impl.EnvironmentsByNameApiServiceImpl",
+              "msg": "Fetching self description from podmgr ledger for the pod wrjv ",
+              "service": "podmgr",
+              "tailed_path": "/root/volumes/podmanager/logs/json/podmgr.json.log",
+              "thread": "qtp1315022947-383867",
+              "threadId": 383867,
+              "ts": 1699943417449
+            },
+            "id": "1ff42c89-53da-446b-8df8-1708b6f31f6c",
+            "oracle": {
+              "compartmentid": "ocid1.compartment.oc1..aaaaaaaahvj4zc3tou5g67ly4bndwsicm5jhw6p5jlef4fixfzg7zev2twyq",
+              "ingestedtime": "2023-11-14T06:31:09.719007109Z",
+              "instanceid": "ocid1.instance.oc1.phx.anyhqljr23ykjlicrgqxwqti4nm55uqqr64eqradib2cjuxddxoy3dsrr52q",
+              "loggroupid": "ocid1.loggroup.oc1.phx.amaaaaaa23ykjliavzkmuqmi4lyvvp2taftzg7jq3yv4ucbmnb2h3wo6dfda",
+              "logid": "ocid1.log.oc1.phx.amaaaaaa23ykjliaqj56xxkjc54ln2bfkmxcf6wteb7p622rv6sebntmkonq",
+              "tenantid": "ocid1.tenancy.oc1..aaaaaaaarn2svgspiclphqbtgjzam5aa3foqepjhfcahwvbmpch2llcmr3la"
+            },
+            "source": "podmanager_3",
+            "specversion": "1.0",
+            "subject": "/root/volumes/podmanager/logs/json/podmgr.json.log",
+            "time": "2023-11-14T06:30:17.561Z",
+            "type": "com.oraclecloud.logging.custom.podmgr_logs"
+          }
+        }
+      }
+    ],
+    "summary": {
+      "field_count": null,
+      "result_count": 10
+    }
+  }
+  
